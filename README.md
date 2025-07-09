@@ -26,7 +26,7 @@ Welcome to **LLaMA Chatbot**, a local Flask-based conversational assistant power
 ## 📦 Folder Structure
 ```
 llama-chatbot/
-├── app.py
+├── app1.py
 ├── templates/
 │ └── index.html
 ├── static/
@@ -61,7 +61,7 @@ model_path = "trained_model_20250708_032008"
 ```
 5. Run the app
 ```
-python app.py
+python app1.py
 ```
 Visit: http://localhost:5005
 
