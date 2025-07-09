@@ -71,11 +71,15 @@ Visit: http://localhost:5005
 - Flask Backend API & Web Server  
 - Transformers for model loading & text generation  
 - PyTorch deep learning engine  
-- HTML / CSS / JS Frontend  
+- HTML / CSS / JS Frontend
+
+---
 
 🧪 **Sample Prompt**  
 **You**: What is quantum computing?  
 **Bot**: Quantum computing is a type of computing that uses the principles of quantum mechanics, a branch of physics that describes the behavior of matter and energy at the smallest scales.....
+
+---
 
 ❓ **FAQ**  
 - **Q**: Can this run on CPU?  
@@ -87,8 +91,12 @@ Visit: http://localhost:5005
 - **Q**: Can I swap the LLaMA model with another?  
   **A**: Yes! As long as it’s compatible with `AutoModelForCausalLM`.
 
+---
+
 📄 **License**  
 MIT License – You can use, modify, and distribute it for both personal and commercial purposes.
+
+---
 
 ✨ **Author**  
 Made by **Jasleen Kaur Matharoo**  
