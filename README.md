@@ -1,7 +1,3 @@
-📁 llama-chatbot/README.md
-markdown
-Copy
-Edit
 # 🤖 LLaMA Chatbot – Local AI Assistant
 
 Welcome to **LLaMA Chatbot**, a local Flask-based conversational assistant powered by the **LLaMA model**. This chatbot runs completely offline and can respond to user prompts in a natural, human-like way.
