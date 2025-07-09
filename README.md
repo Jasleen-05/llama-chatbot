@@ -32,6 +32,7 @@ llama-chatbot/
 │ └── index.html
 ├── static/
 │ ├── styles.css
+│ ├── script.js
 ├── requirements.txt
 └── README.md
 ```
@@ -73,6 +74,7 @@ Visit: http://localhost:5005
 - Transformers for model loading & text generation  
 - PyTorch deep learning engine  
 - HTML / CSS / JS Frontend
+- Python
 
 ---
 
