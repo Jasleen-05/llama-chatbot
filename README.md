@@ -27,7 +27,6 @@ Welcome to **LLaMA Chatbot**, a local Flask-based conversational assistant power
 ```
 llama-chatbot/
 ├── app.py
-├── trained_model_<timestamp>/
 ├── templates/
 │ └── index.html
 ├── static/
