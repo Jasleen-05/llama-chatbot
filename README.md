@@ -18,7 +18,8 @@ Welcome to **LLaMA Chatbot**, a local Flask-based conversational assistant power
 
 ## 🖥️ Demo
 
-![Chatbot Demo Screenshot]![image](https://github.com/user-attachments/assets/b78c2244-3555-48ec-b192-16084eb18957)
+![Chatbot Demo Screenshot]![image](https://github.com/user-attachments/assets/037db4d1-ecce-4fc8-acad-1bcf61d2e509)
+
 
 
 ---
@@ -26,8 +27,7 @@ Welcome to **LLaMA Chatbot**, a local Flask-based conversational assistant power
 ## 📦 Folder Structure
 ```
 llama-chatbot/
-├── app.py
-├── trained_model_<timestamp>/
+├── app1.py
 ├── templates/
 │ └── index.html
 ├── static/
@@ -62,19 +62,25 @@ model_path = "trained_model_20250708_032008"
 ```
 5. Run the app
 ```
-python app.py
+python app1.py
 ```
 Visit: http://localhost:5005
+
+---
 
 ⚙️ **Tech Stack**  
 - Flask Backend API & Web Server  
 - Transformers for model loading & text generation  
 - PyTorch deep learning engine  
-- HTML / CSS / JS Frontend  
+- HTML / CSS / JS Frontend
+
+---
 
 🧪 **Sample Prompt**  
 **You**: What is quantum computing?  
-**Bot**: Quantum computing is a type of computing that uses the principles of quantum mechanics, a branch of physics that describes the behavior of matter and energy at the smallest scales.....
+**Bot**: Quantum computing is a type of computing that uses the principles of quantum mechanics...
+
+---
 
 ❓ **FAQ**  
 - **Q**: Can this run on CPU?  
@@ -86,8 +92,12 @@ Visit: http://localhost:5005
 - **Q**: Can I swap the LLaMA model with another?  
   **A**: Yes! As long as it’s compatible with `AutoModelForCausalLM`.
 
+---
+
 📄 **License**  
 MIT License – You can use, modify, and distribute it for both personal and commercial purposes.
+
+---
 
 ✨ **Author**  
 Made by **Jasleen Kaur Matharoo**  
