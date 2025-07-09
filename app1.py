@@ -73,7 +73,7 @@ def index():
 def ask():
     data = request.json
     user_input = data['message']
-    chat_history = data.get('history', [])git branch -M main
+    chat_history = data.get('history', [])
     response = generate_response(user_input, chat_history)
     return jsonify({"response": response})
 
