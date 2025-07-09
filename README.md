@@ -65,6 +65,8 @@ python app1.py
 ```
 Visit: http://localhost:5005
 
+---
+
 ⚙️ **Tech Stack**  
 - Flask Backend API & Web Server  
 - Transformers for model loading & text generation  
