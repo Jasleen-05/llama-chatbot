@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🦙 LLaMA-2 Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-header">🦙 LLaMA-2 Chatbot</div>
+  <div id="chatbox" class="chatbox"></div>
+
+  <div class="chat-input">
+    <input type="text" id="message" placeholder="Type a message..." onkeypress="handleKeyPress(event)" />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+  let history = [];
+
+  async function sendMessage() {
+    const input = document.getElementById("message");
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    const chatbox = document.getElementById("chatbox");
+
+    chatbox.innerHTML += `<div class="message user">You: ${msg}</div>`;
+    input.value = "";
+    chatbox.scrollTop = chatbox.scrollHeight;
+
+    try {
+      const res = await fetch("/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: msg, history: history })
+      });
+
+      const data = await res.json();
+      const botReply = data.response;
+
+      chatbox.innerHTML += `<div class="message bot">Bot: ${botReply}</div>`;
+      chatbox.scrollTop = chatbox.scrollHeight;
+
+      history.push([msg, botReply]);
+    } catch (error) {
+      chatbox.innerHTML += `<div class="message bot">⚠️ Error: Could not get a response.</div>`;
+    }
+  }
+
+  function handleKeyPress(e) {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  }
+</script>
+
+</body>
+</html>

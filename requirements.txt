@@ -1,0 +1,17 @@
+flask
+flask-cors
+torch>=2.0.0
+transformers>=4.36.0
+
+Notes:
+
+torch>=2.0.0: Adjust depending on your GPU or CPU environment.
+
+  * For GPU support (CUDA), install with:
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    Replace `cu118` with your CUDA version (e.g., `cu117`, `cu121`, etc.).
+
+If you're using LLaMA models with 4-bit quantization, and you plan to support quantized models:
+
+  bitsandbytes
+  accelerate
