@@ -18,7 +18,8 @@ Welcome to **LLaMA Chatbot**, a local Flask-based conversational assistant power
 
 ## 🖥️ Demo
 
-![Chatbot Demo Screenshot]![image](https://github.com/user-attachments/assets/b78c2244-3555-48ec-b192-16084eb18957)
+![Chatbot Demo Screenshot]![image](https://github.com/user-attachments/assets/037db4d1-ecce-4fc8-acad-1bcf61d2e509)
+
 
 
 ---
@@ -77,7 +78,7 @@ Visit: http://localhost:5005
 
 🧪 **Sample Prompt**  
 **You**: What is quantum computing?  
-**Bot**: Quantum computing is a type of computing that uses the principles of quantum mechanics, a branch of physics that describes the behavior of matter and energy at the smallest scales.....
+**Bot**: Quantum computing is a type of computing that uses the principles of quantum mechanics...
 
 ---
 
