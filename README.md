@@ -13,6 +13,7 @@ Welcome to **LLaMA Chatbot**, a local Flask-based conversational assistant power
 - 🎨 Custom frontend with responsive UI
 - 🌐 Supports **local hosting** without internet
 - 💬 Chat UI with instant feedback
+- Model Used: [Llama 2](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
 
 ---
 
